@@ -58,9 +58,23 @@ a {
   line-height: 1.17;
 }
 
+.line-clamp {
+  display: --webkit-box;
+  -webkit-line-clamp: var(--line-clamp, 1);
+  overflow: hidden;
+}
+
+.line-clamp.line-2 {
+  --line-clamp: 2;
+}
+
 .heading.lv2 {
   font-size: 3.8rem;
   line-height: 1.26;
+}
+
+.break-all {
+  word-break: break-all;
 }
 
 /* Header */
@@ -356,6 +370,7 @@ a {
 }
 
 .popular .rating .value {
+  padding-right: 6px;
   margin-left: 6px;
   font-size: 1.6rem;
   line-height: 1.75;
